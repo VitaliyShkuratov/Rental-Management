@@ -44,11 +44,67 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DHTMLX, Version=3.3.6200.24560, Culture=neutral, PublicKeyToken=53f24791214eb8ac, processorArchitecture=MSIL">
+      <HintPath>..\packages\DHTMLX.Scheduler.NET.3.3.23.3\lib\DHTMLX.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin.Security.Google, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RazorEngine, Version=3.4.1.0, Culture=neutral, PublicKeyToken=9ee697374c7e744a, processorArchitecture=MSIL">
+      <HintPath>..\packages\RazorEngine.3.4.1\lib\net45\RazorEngine.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -110,11 +166,12 @@
       <Private>True</Private>
       <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
+    <Reference Include="Zlib.Portable, Version=1.11.0.0, Culture=neutral, PublicKeyToken=431cba815f6a8b5b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zlib.Portable.Signed.1.11.0\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -151,9 +208,6 @@
     <Reference Include="Microsoft.Owin.Security.OAuth">
       <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Owin.Security.Google">
-      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Owin.Security.Twitter">
       <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
     </Reference>
@@ -168,27 +222,371 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CalendarController.cs" />
+    <Compile Include="Controllers\EmailsController.cs" />
+    <Compile Include="Controllers\PropertyController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701131721235_InitialModel.cs" />
+    <Compile Include="Migrations\201701131721235_InitialModel.Designer.cs">
+      <DependentUpon>201701131721235_InitialModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701131733415_InitializeBuildingsApartmenysPersons.cs" />
+    <Compile Include="Migrations\201701131733415_InitializeBuildingsApartmenysPersons.Designer.cs">
+      <DependentUpon>201701131733415_InitializeBuildingsApartmenysPersons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701131749025_ModifyAppartmentTable.cs" />
+    <Compile Include="Migrations\201701131749025_ModifyAppartmentTable.Designer.cs">
+      <DependentUpon>201701131749025_ModifyAppartmentTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701131753355_SeedPersonType.cs" />
+    <Compile Include="Migrations\201701131753355_SeedPersonType.Designer.cs">
+      <DependentUpon>201701131753355_SeedPersonType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701131809060_SeedBuildingType.cs" />
+    <Compile Include="Migrations\201701131809060_SeedBuildingType.Designer.cs">
+      <DependentUpon>201701131809060_SeedBuildingType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701132001010_AddPropertiesToApartmentAndBuilding.cs" />
+    <Compile Include="Migrations\201701132001010_AddPropertiesToApartmentAndBuilding.Designer.cs">
+      <DependentUpon>201701132001010_AddPropertiesToApartmentAndBuilding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701132004176_ModifyIdPropertyApartment.cs" />
+    <Compile Include="Migrations\201701132004176_ModifyIdPropertyApartment.Designer.cs">
+      <DependentUpon>201701132004176_ModifyIdPropertyApartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701132054276_ModifyIdPropertyApartment1.cs" />
+    <Compile Include="Migrations\201701132054276_ModifyIdPropertyApartment1.Designer.cs">
+      <DependentUpon>201701132054276_ModifyIdPropertyApartment1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701140313383_AddRequiredParameterToBuildingApartmentPerson.cs" />
+    <Compile Include="Migrations\201701140313383_AddRequiredParameterToBuildingApartmentPerson.Designer.cs">
+      <DependentUpon>201701140313383_AddRequiredParameterToBuildingApartmentPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701141807005_AddPricePropertyToApartment.cs" />
+    <Compile Include="Migrations\201701141807005_AddPricePropertyToApartment.Designer.cs">
+      <DependentUpon>201701141807005_AddPricePropertyToApartment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701142021260_RemovePersonFromDB.cs" />
+    <Compile Include="Migrations\201701142021260_RemovePersonFromDB.Designer.cs">
+      <DependentUpon>201701142021260_RemovePersonFromDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701150024077_SeedUsersAndRoles.cs" />
+    <Compile Include="Migrations\201701150024077_SeedUsersAndRoles.Designer.cs">
+      <DependentUpon>201701150024077_SeedUsersAndRoles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701150029045_AddToSeedUsersAndRolesEmails.cs" />
+    <Compile Include="Migrations\201701150029045_AddToSeedUsersAndRolesEmails.Designer.cs">
+      <DependentUpon>201701150029045_AddToSeedUsersAndRolesEmails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701161859067_AddFirstLastNameFieldToUsersTable.cs" />
+    <Compile Include="Migrations\201701161859067_AddFirstLastNameFieldToUsersTable.Designer.cs">
+      <DependentUpon>201701161859067_AddFirstLastNameFieldToUsersTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701170057042_ChangeModelOfProperty.cs" />
+    <Compile Include="Migrations\201701170057042_ChangeModelOfProperty.Designer.cs">
+      <DependentUpon>201701170057042_ChangeModelOfProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701171446468_RemoveApartmentAndBuildingAddProperties.cs" />
+    <Compile Include="Migrations\201701171446468_RemoveApartmentAndBuildingAddProperties.Designer.cs">
+      <DependentUpon>201701171446468_RemoveApartmentAndBuildingAddProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701171730411_AddRequiredPropertyToBuildingTypeId.cs" />
+    <Compile Include="Migrations\201701171730411_AddRequiredPropertyToBuildingTypeId.Designer.cs">
+      <DependentUpon>201701171730411_AddRequiredPropertyToBuildingTypeId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701180016304_AddDescriptionToProperty.cs" />
+    <Compile Include="Migrations\201701180016304_AddDescriptionToProperty.Designer.cs">
+      <DependentUpon>201701180016304_AddDescriptionToProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701182058367_AddRolesListPropertyToApplicationUser.cs" />
+    <Compile Include="Migrations\201701182058367_AddRolesListPropertyToApplicationUser.Designer.cs">
+      <DependentUpon>201701182058367_AddRolesListPropertyToApplicationUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701191427583_CreateEventsTable.cs" />
+    <Compile Include="Migrations\201701191427583_CreateEventsTable.Designer.cs">
+      <DependentUpon>201701191427583_CreateEventsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701191519430_UpdateNameEventsTable.cs" />
+    <Compile Include="Migrations\201701191519430_UpdateNameEventsTable.Designer.cs">
+      <DependentUpon>201701191519430_UpdateNameEventsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701191703037_UpdateCalendarEventProperty.cs" />
+    <Compile Include="Migrations\201701191703037_UpdateCalendarEventProperty.Designer.cs">
+      <DependentUpon>201701191703037_UpdateCalendarEventProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701191710332_UpdateCalendarEventProperty1.cs" />
+    <Compile Include="Migrations\201701191710332_UpdateCalendarEventProperty1.Designer.cs">
+      <DependentUpon>201701191710332_UpdateCalendarEventProperty1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701200225476_CreateImageModelsTables.cs" />
+    <Compile Include="Migrations\201701200225476_CreateImageModelsTables.Designer.cs">
+      <DependentUpon>201701200225476_CreateImageModelsTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701200232487_CreatePropertyImageTable.cs" />
+    <Compile Include="Migrations\201701200232487_CreatePropertyImageTable.Designer.cs">
+      <DependentUpon>201701200232487_CreatePropertyImageTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701200251420_UpdateNameFieldaAndAddPropertyImageModelsTable.cs" />
+    <Compile Include="Migrations\201701200251420_UpdateNameFieldaAndAddPropertyImageModelsTable.Designer.cs">
+      <DependentUpon>201701200251420_UpdateNameFieldaAndAddPropertyImageModelsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701200313270_UpdateNameFieldaAndAddPropertyImageModelsTable_1.cs" />
+    <Compile Include="Migrations\201701200313270_UpdateNameFieldaAndAddPropertyImageModelsTable_1.Designer.cs">
+      <DependentUpon>201701200313270_UpdateNameFieldaAndAddPropertyImageModelsTable_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701200317556_UpdateNameFields.cs" />
+    <Compile Include="Migrations\201701200317556_UpdateNameFields.Designer.cs">
+      <DependentUpon>201701200317556_UpdateNameFields.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701200322555_UpdateNameFields1.cs" />
+    <Compile Include="Migrations\201701200322555_UpdateNameFields1.Designer.cs">
+      <DependentUpon>201701200322555_UpdateNameFields1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701201513437_ChangeImageModelTable.cs" />
+    <Compile Include="Migrations\201701201513437_ChangeImageModelTable.Designer.cs">
+      <DependentUpon>201701201513437_ChangeImageModelTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701201519350_ChangeImageDataProperty.cs" />
+    <Compile Include="Migrations\201701201519350_ChangeImageDataProperty.Designer.cs">
+      <DependentUpon>201701201519350_ChangeImageDataProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701201523071_AddTablePropertyImageModel.cs" />
+    <Compile Include="Migrations\201701201523071_AddTablePropertyImageModel.Designer.cs">
+      <DependentUpon>201701201523071_AddTablePropertyImageModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701202050472_UpdateImageModelTable.cs" />
+    <Compile Include="Migrations\201701202050472_UpdateImageModelTable.Designer.cs">
+      <DependentUpon>201701202050472_UpdateImageModelTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701220111257_AddPropertyTable.cs" />
+    <Compile Include="Migrations\201701220111257_AddPropertyTable.Designer.cs">
+      <DependentUpon>201701220111257_AddPropertyTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701220113393_RemovePropertyTable.cs" />
+    <Compile Include="Migrations\201701220113393_RemovePropertyTable.Designer.cs">
+      <DependentUpon>201701220113393_RemovePropertyTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\BookAppointmenModel.cs" />
+    <Compile Include="Models\Constants.cs" />
+    <Compile Include="Models\EmailViewModel.cs" />
+    <Compile Include="Models\ImageModel.cs" />
+    <Compile Include="Models\Property.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\BuildingType.cs" />
+    <Compile Include="Models\CalendarEvent.cs" />
+    <Compile Include="Models\PropertyImageModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\DetailUserViewModel.cs" />
+    <Compile Include="ViewModels\EditPersonViewModel.cs" />
+    <Compile Include="ViewModels\EditUserViewModel.cs" />
+    <Compile Include="ViewModels\HomeDetailViewModel.cs" />
+    <Compile Include="ViewModels\HomeIndexViewModel.cs" />
+    <Compile Include="ViewModels\PropertyViewModel.cs" />
+    <Compile Include="ViewModels\UserViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\bootstrap-cerulean.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\PagedList.css" />
+    <Content Include="dhxscheduler.sample.mvc3.readme.txt" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\dhtmlxScheduler\dhtmlxscheduler.css" />
+    <Content Include="Scripts\dhtmlxScheduler\dhtmlxscheduler.js" />
+    <Content Include="Scripts\dhtmlxScheduler\dhtmlxscheduler_classic.css" />
+    <Content Include="Scripts\dhtmlxScheduler\dhtmlxscheduler_custom_lightbox.js" />
+    <Content Include="Scripts\dhtmlxScheduler\dhtmlxscheduler_flat.css" />
+    <Content Include="Scripts\dhtmlxScheduler\dhtmlxscheduler_glossy.css" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_active_links.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_agenda_view.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_all_timed.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_collision.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_container_autoresize.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_cookie.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_daytimeline.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_drag_between.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_editors.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_expand.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_grid_view.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_html_templates.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_key_nav.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_layer.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_limit.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_live_updates.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_map_view.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_minical.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_monthheight.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_multisection.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_multiselect.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_multisource.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_mvc.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_offline.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_outerdrag.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_pdf.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_quick_info.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_readonly.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_recurring.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_serialize.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_timeline.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_tooltip.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_treetimeline.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_units.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_url.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_week_agenda.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_wp.js" />
+    <Content Include="Scripts\dhtmlxScheduler\ext\dhtmlxscheduler_year_view.js" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\buttons.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\but_repeat.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\calendar.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\clock_big.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\clock_small.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\collapse_expand_icon.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\controls.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\databg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\databg_now.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\export_ical.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\export_pdf.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\icon.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\images.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\loading.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs\resize_dots.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\arrow_left.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\arrow_right.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\but_repeat.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\calendar.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\clock_big.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\clock_small.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\close_icon.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\collapse_expand_icon.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\controls.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\databg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\databg_now.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\export_ical.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\export_pdf.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\resize_dots.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_dhx_terrace\resizing.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_flat\agenda_bg.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_flat\arrow_left.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_flat\arrow_right.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_flat\but_repeat.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_flat\calendar.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_flat\clock.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_flat\clock_big.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_flat\clock_small.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_flat\close_icon.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_flat\collapse_expand_icon.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_flat\controls.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_flat\databg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_flat\databg_now.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_flat\export_ical.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_flat\export_pdf.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_flat\resize_dots.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_flat\resizing.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\blue_tab.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\blue_tab_wide.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\buttons.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\but_repeat.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\calendar.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\clock_big.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\clock_small.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\collapse_expand_icon.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\controlls5.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\databg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\databg_now.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\event-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\export_ical.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\export_pdf.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\icon.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\left-separator.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\left-time-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\lightbox.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\loading.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\move.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\multi-days-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\second-top-days-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\top-days-bg.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\top-separator.gif" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\white_tab.png" />
+    <Content Include="Scripts\dhtmlxScheduler\imgs_glossy\white_tab_wide.png" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_ar.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_be.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_ca.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_cn.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_cs.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_da.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_de.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_el.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_en.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_es.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_fi.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_fr.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_he.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_hu.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_id.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_it.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_jp.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_nb.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_nl.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_no.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_pl.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_pt.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_ro.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_ru.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_si.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_sk.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_sv.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_tr.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\locale_ua.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\locale_recurring_be.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\locale_recurring_cn.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\locale_recurring_cs.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\locale_recurring_da.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\locale_recurring_de.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\locale_recurring_el.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\locale_recurring_en.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\locale_recurring_es.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\locale_recurring_fi.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\locale_recurring_fr.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\locale_recurring_it.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\locale_recurring_nb.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\locale_recurring_nl.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\locale_recurring_pl.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\locale_recurring_pt.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\locale_recurring_ro.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\locale_recurring_ru.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\locale_recurring_sk.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\locale_recurring_sv.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\locale_recurring_ua.js" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\repeat_template_be.html" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\repeat_template_cn.html" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\repeat_template_de.html" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\repeat_template_el.html" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\repeat_template_en.html" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\repeat_template_es.html" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\repeat_template_fr.html" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\repeat_template_it.html" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\repeat_template_nl.html" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\repeat_template_ro.html" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\repeat_template_ru.html" />
+    <Content Include="Scripts\dhtmlxScheduler\locale\recurring\repeat_template_sk.html" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -200,20 +598,22 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Views\Web.config" />
+    <Content Include="Views\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
@@ -234,9 +634,28 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Property\Index.cshtml" />
+    <Content Include="Views\Manage\ChangePasswordResult.cshtml" />
+    <Content Include="Views\Person\Index.cshtml" />
+    <Content Include="Views\Person\Details.cshtml" />
+    <Content Include="Views\Person\PersonForm.cshtml" />
+    <Content Include="Views\Home\Detail.cshtml" />
+    <Content Include="Views\Property\Detail_1.cshtml" />
+    <Content Include="Views\Property\Create.cshtml" />
+    <Content Include="Views\Person\Edit.cshtml" />
+    <Content Include="Views\Emails\_ViewStart.cshtml" />
+    <Content Include="Views\Emails\Web.config" />
+    <Content Include="Views\Emails\Email.cshtml" />
+    <Content Include="Views\Calendar\Index.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Calendar\ChooseDate.cshtml" />
+    <Content Include="Views\Property\Edit.cshtml" />
+    <Content Include="Views\Property\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="ImagesFolder\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -245,6 +664,113 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201701131721235_InitialModel.resx">
+      <DependentUpon>201701131721235_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701131733415_InitializeBuildingsApartmenysPersons.resx">
+      <DependentUpon>201701131733415_InitializeBuildingsApartmenysPersons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701131749025_ModifyAppartmentTable.resx">
+      <DependentUpon>201701131749025_ModifyAppartmentTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701131753355_SeedPersonType.resx">
+      <DependentUpon>201701131753355_SeedPersonType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701131809060_SeedBuildingType.resx">
+      <DependentUpon>201701131809060_SeedBuildingType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701132001010_AddPropertiesToApartmentAndBuilding.resx">
+      <DependentUpon>201701132001010_AddPropertiesToApartmentAndBuilding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701132004176_ModifyIdPropertyApartment.resx">
+      <DependentUpon>201701132004176_ModifyIdPropertyApartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701132054276_ModifyIdPropertyApartment1.resx">
+      <DependentUpon>201701132054276_ModifyIdPropertyApartment1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701140313383_AddRequiredParameterToBuildingApartmentPerson.resx">
+      <DependentUpon>201701140313383_AddRequiredParameterToBuildingApartmentPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701141807005_AddPricePropertyToApartment.resx">
+      <DependentUpon>201701141807005_AddPricePropertyToApartment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701142021260_RemovePersonFromDB.resx">
+      <DependentUpon>201701142021260_RemovePersonFromDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701150024077_SeedUsersAndRoles.resx">
+      <DependentUpon>201701150024077_SeedUsersAndRoles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701150029045_AddToSeedUsersAndRolesEmails.resx">
+      <DependentUpon>201701150029045_AddToSeedUsersAndRolesEmails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701161859067_AddFirstLastNameFieldToUsersTable.resx">
+      <DependentUpon>201701161859067_AddFirstLastNameFieldToUsersTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701170057042_ChangeModelOfProperty.resx">
+      <DependentUpon>201701170057042_ChangeModelOfProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701171446468_RemoveApartmentAndBuildingAddProperties.resx">
+      <DependentUpon>201701171446468_RemoveApartmentAndBuildingAddProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701171730411_AddRequiredPropertyToBuildingTypeId.resx">
+      <DependentUpon>201701171730411_AddRequiredPropertyToBuildingTypeId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701180016304_AddDescriptionToProperty.resx">
+      <DependentUpon>201701180016304_AddDescriptionToProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701182058367_AddRolesListPropertyToApplicationUser.resx">
+      <DependentUpon>201701182058367_AddRolesListPropertyToApplicationUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701191427583_CreateEventsTable.resx">
+      <DependentUpon>201701191427583_CreateEventsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701191519430_UpdateNameEventsTable.resx">
+      <DependentUpon>201701191519430_UpdateNameEventsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701191703037_UpdateCalendarEventProperty.resx">
+      <DependentUpon>201701191703037_UpdateCalendarEventProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701191710332_UpdateCalendarEventProperty1.resx">
+      <DependentUpon>201701191710332_UpdateCalendarEventProperty1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701200225476_CreateImageModelsTables.resx">
+      <DependentUpon>201701200225476_CreateImageModelsTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701200232487_CreatePropertyImageTable.resx">
+      <DependentUpon>201701200232487_CreatePropertyImageTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701200251420_UpdateNameFieldaAndAddPropertyImageModelsTable.resx">
+      <DependentUpon>201701200251420_UpdateNameFieldaAndAddPropertyImageModelsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701200313270_UpdateNameFieldaAndAddPropertyImageModelsTable_1.resx">
+      <DependentUpon>201701200313270_UpdateNameFieldaAndAddPropertyImageModelsTable_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701200317556_UpdateNameFields.resx">
+      <DependentUpon>201701200317556_UpdateNameFields.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701200322555_UpdateNameFields1.resx">
+      <DependentUpon>201701200322555_UpdateNameFields1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701201513437_ChangeImageModelTable.resx">
+      <DependentUpon>201701201513437_ChangeImageModelTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701201519350_ChangeImageDataProperty.resx">
+      <DependentUpon>201701201519350_ChangeImageDataProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701201523071_AddTablePropertyImageModel.resx">
+      <DependentUpon>201701201523071_AddTablePropertyImageModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701202050472_UpdateImageModelTable.resx">
+      <DependentUpon>201701202050472_UpdateImageModelTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701220111257_AddPropertyTable.resx">
+      <DependentUpon>201701220111257_AddPropertyTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701220113393_RemovePropertyTable.resx">
+      <DependentUpon>201701220113393_RemovePropertyTable.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

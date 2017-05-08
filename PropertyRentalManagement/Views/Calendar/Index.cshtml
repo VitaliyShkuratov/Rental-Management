@@ -1,0 +1,21 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DHXScheduler initialization sample</title>
+    <style>
+        body
+        {
+            background-color:#eee;
+        }
+    </style>
+</head>
+<body>
+    <div style="height:1200px;width:100%; margin:0 auto;">
+        @Html.Raw(Model.Render())
+    </div>
+</body>
+</html>

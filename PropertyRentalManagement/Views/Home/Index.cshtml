@@ -1,31 +1,59 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@model IPagedList<PropertyRentalManagement.ViewModels.HomeIndexViewModel>
+
+@{
+    ViewBag.Title = "Index";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<h2>List of Apartments</h2>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+<div id="apartmentList">
+
+    <div class="pagedList" data-otf-target="#apartmentList">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }),
+       PagedListRenderOptions.MinimalWithItemCountText)
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+
+    @using (Html.BeginForm(new { @class = "form-horizontal", role = "form" }))
+    {
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit">Search</button>
+                    </span>
+                    <input type="search" name="searchTerm" class="form-control" placeholder="Search for...">
+                </div>
+            </div>
+        </div>
+    }
+    <hr />
+    <div class="container" style="margin-top:20px; height:700px">
+        @foreach (var item in Model)
+        {
+            string address = item.Property.Address;
+
+            if (!String.IsNullOrEmpty(item.Property.AppartmentNumber))
+            {
+                address += " app# " + item.Property.AppartmentNumber;
+            }
+
+            if (item.Property.Available == true)
+            {
+                <a href="@Url.Action("Detail", "Home", new { id = item.Property.Id }, null)">
+                    <div style="width:200px; height:280px; float:left; margin-right:20px; margin-bottom:10px; border:1px solid #bbb8b8; border-radius:5px">
+                        <img src="@Url.Content(item.ImageFileName)" alt="property image" style="width:185px; height:200px; margin-left:7px; margin-top:5px; margin-bottom:5px;border-radius:5px" />
+                        <div style="width:185px; margin-left:5px">
+                            <p class="text-success">@item.Property.BuildingType.Name</p>
+                            <p class="text-info" style="line-height: 2px">
+                                @item.Property.Address
+
+                            <span class="text-info"> / @item.Property.NumberRooms</span>
+                        </p>
+                        <p class="text-danger">$ @item.Property.Price</p>
+                    </div>
+                </div>
+            </a>
+            }
+        }
     </div>
 </div>

@@ -6,12 +6,42 @@
     @Html.AntiForgeryToken()
 
     <ul class="nav navbar-nav navbar-right">
-        <li>
-            @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
-        </li>
-        <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
-    </ul>
-    }
+        @if (User.IsInRole("admin"))
+        {
+            <li>
+                @Html.ActionLink("Calendar", "Index", "Calendar")
+            </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                        Manage
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            @Html.ActionLink("Manage properties", "Index", "Property")
+                        </li>
+                        <li>
+                            @Html.ActionLink("Manage persons", "Index", "Person")
+                        </li>
+                    </ul>
+                </li>
+        }
+
+                @if (User.IsInRole("manager"))
+                {
+                    <li>
+                        @Html.ActionLink("Calendar", "Index", "Calendar")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Manage properties", "Index", "Property")
+                    </li>
+                }
+                <li>
+                    @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "ChangePassword", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+                </li>
+                <li><a href="javascript:document.getElementById('logoutForm').submit()">Log off</a></li>
+            </ul>
+        }
 }
 else
 {

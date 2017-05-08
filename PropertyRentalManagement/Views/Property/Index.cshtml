@@ -1,0 +1,88 @@
+﻿@model IPagedList<PropertyRentalManagement.Models.Property>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+<div id="apartmentList">
+    <div class="pagedList" data-otf-target="#apartmentList">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }),
+       PagedListRenderOptions.MinimalWithItemCountText)
+    </div>
+
+    @using (Html.BeginForm(new { @class = "form-horizontal", role = "form" }))
+    {
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">Search</button>
+                </span>
+                <input type="search" name="searchTerm" class="form-control" placeholder="Search for...">
+            </div>
+        </div>
+    </div>
+    }
+    <br />
+    <table class="table table-hover">
+        <tr>
+            <th>Address</th>
+            <th>Building type</th>
+            <th>Number rooms</th>
+            <th>Monthly price</th>
+            <th>Rent started</th>
+            <th>Rent finished</th>
+            <th>Currently available</th>
+            <th>Actions</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            string address = item.Address;
+            string available = "available";
+
+            if (!String.IsNullOrEmpty(item.AppartmentNumber))
+            {
+                address += " app# " + item.AppartmentNumber;
+            }
+            if (item.Available == false)
+            {
+                available = "not available";
+            }
+            <tr>
+                <td>
+                    @address
+                </td>
+                <td>
+                    @item.BuildingType.Name
+                </td>
+                <td>
+                    @item.NumberRooms
+                </td>
+                <td>
+                    $ @item.Price
+                </td>
+                <td>
+                    @item.RentStarted
+                </td>
+                <td>
+                    @item.RentFinished
+                </td>
+                <td>
+                    @available
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Detail", "Detail", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+            }
+    </table>
+</div>
